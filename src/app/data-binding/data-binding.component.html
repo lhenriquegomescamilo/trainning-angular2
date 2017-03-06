@@ -31,3 +31,26 @@
     This text show on case of error
   </div>
 </section>
+<section class="event-binding">
+  <article>
+    <h3>Event Binding</h3>
+    <div>
+      <button (click)="onClick()">Me clique</button>
+      <br/><br/>
+      <input type="text" 
+          (keyup)="onKeyup($event)"
+          (keyup.enter)="onSave(field.value)"
+          (blur)="onSave(field.value)"
+          #field />
+          <div>Conteúdo Atual: {{current}}</div>
+          <div>Conteúdo Salvo: {{saved}}</div>
+
+          <span
+          (mouseover)="onMouseSpan()"
+          (mouseout)="onMouseSpan()"
+          [class.hightlight]="isMouseOver">
+            Passe o mouse aqui!
+          </span>
+    </div>
+  </article>
+</section>

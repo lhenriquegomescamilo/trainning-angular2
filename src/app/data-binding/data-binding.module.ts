@@ -10,4 +10,4 @@ import { DataBindingComponent } from './data-binding.component';
   declarations: [DataBindingComponent],
   exports: [DataBindingComponent]
 })
-export class DataBindingModule { }
+export class DataBindingModule {}
