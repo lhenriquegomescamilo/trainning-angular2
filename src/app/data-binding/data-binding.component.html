@@ -1,13 +1,30 @@
 <section class="property-binding">
-    <article>
-        <h3>Interpolation/Interpolação</h3>
-        <p>String renderizada com Interpolatio {{url}}</p>
-    </article>
-    <article>
-        <h3>Property Binding</h3>
+  <article>
+    <h3>Interpolation/Interpolação</h3>
+    <p>String renderizada com Interpolatio {{url}}</p>
+  </article>
+  <article>
+    <h3>Property Binding</h3>
 
-        <img src="{{urlImage}}"/>
-        <img [src]="urlImage"/>
-        <img bind-src="urlImage"/>
-    </article>
+    <img src="{{urlImage}}" />
+    <img [src]="urlImage" />
+    <img bind-src="urlImage" />
+  </article>
+  <article>
+    <div>Class e Style binding</div>
+    <div>
+      Selecione a classe:
+      <select #clazz (change)="0">
+                <option value="alert-success">Success</option>
+                <option value="alert-info">Info</option>
+                <option value="alert-warning">Warning</option>
+                <option value="alert-danger">Error</option>
+            </select>
+      <br/><br/>
+      <div class="alert" role="alert" [class.alert-success]="clazz.value == 'alert-success'">Sucesso</div>
+      <div class="alert" role="alert" [class.alert-info]="clazz.value == 'alert-info'">Info</div>
+      <div class="alert" role="alert" [class.alert-warning]="clazz.value == 'alert-warning'">Waring</div>
+      <div class="alert" role="alert" [class.alert-danger]="clazz.value == 'alert-danger'">Danger</div>
+    </div>
+  </article>
 </section>

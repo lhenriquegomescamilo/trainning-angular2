@@ -17,7 +17,8 @@ import { DataBindingComponent } from './data-binding/data-binding.component';
     FormsModule,
     HttpModule,
     CourseModule,
-    DataBindingModule
+    DataBindingModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
