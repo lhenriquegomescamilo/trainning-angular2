@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-data-binding',
   templateUrl: './data-binding.component.html',
-  styleUrls: ['./data-binding.component.css', './bootstrap.min.css']
+  styleUrls: ['./data-binding.component.css','./bootstrap.min.css']
 })
 export class DataBindingComponent {
 

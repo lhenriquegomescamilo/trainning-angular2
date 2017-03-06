@@ -27,4 +27,7 @@
       <div class="alert" role="alert" [class.alert-danger]="clazz.value == 'alert-danger'">Danger</div>
     </div>
   </article>
+  <div class="alert alert-danger" role="danger" style="display: none;" [style.display]="clazz.value == 'alert-danger' ? 'block' : 'none'">
+    This text show on case of error
+  </div>
 </section>
