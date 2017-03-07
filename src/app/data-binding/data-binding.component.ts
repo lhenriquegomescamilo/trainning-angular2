@@ -1,10 +1,12 @@
 import { Component, OnInit } from '@angular/core';
+import { InputPropertyComponent } from './input-property.component';
 
 @Component({
   selector: 'app-data-binding',
   templateUrl: './data-binding.component.html',
-  styleUrls: ['./data-binding.component.css', './bootstrap.min.css']
+  styleUrls: ['./data-binding.component.css', './bootstrap.min.css'],
 })
+
 export class DataBindingComponent {
 
   url: string = 'https://www.google.com';
@@ -15,8 +17,8 @@ export class DataBindingComponent {
   isMouseOver: boolean = false;
 
   name: string = '';
-  person  = {name : '', age: 0};
-  
+  person = { name: '', age: 0 };
+
   constructor() {
 
   }
