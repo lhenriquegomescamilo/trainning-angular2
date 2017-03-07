@@ -75,7 +75,16 @@
 <section class="input-property">
 
   <article>
-    <h3>Input/Output Property</h3>
+    <h3>Input Property</h3>
     <input-property name="Angular 2"></input-property>
+  </article>
+</section>
+<section class="output-property">
+
+  <article>
+    <h3>Input Property</h3>
+    <counter [value]="valueBegin"
+    (changeValue)="onChangeValue($event)"
+    ></counter>
   </article>
 </section>

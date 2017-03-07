@@ -19,6 +19,10 @@ export class DataBindingComponent {
   name: string = '';
   person = { name: '', age: 0 };
 
+  valueBegin: number = 0;
+
+
+
   constructor() {
 
   }
@@ -36,6 +40,10 @@ export class DataBindingComponent {
 
   onMouseSpan() {
     this.isMouseOver = !this.isMouseOver;
+  }
+
+  onChangeValue(event) {
+    alert(event.newValue);
   }
 
 }
