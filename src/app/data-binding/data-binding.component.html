@@ -1,3 +1,4 @@
+<!--
 <section class="property-binding">
   <article>
     <h3>Interpolation/Interpolação</h3>
@@ -52,5 +53,17 @@
             Passe o mouse aqui!
           </span>
     </div>
+  </article>
+</section>
+-->
+<section class="two-way-binding">
+  <article>
+    <h3>Two way data binding</h3>
+    <div>
+
+      <input type="text" [ngModel]="name" (ngModelChange)="name = $event" />
+      <p>Você digitou {{name}}</p>
+    </div>
+
   </article>
 </section>

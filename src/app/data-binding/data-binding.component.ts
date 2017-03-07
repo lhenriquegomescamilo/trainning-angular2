@@ -12,8 +12,10 @@ export class DataBindingComponent {
 
   current: string = '';
   saved: string = '';
-  isMouseOver : boolean = false;
+  isMouseOver: boolean = false;
 
+  name: string = '';
+  
   constructor() {
 
   }
@@ -29,7 +31,7 @@ export class DataBindingComponent {
     this.saved = value;
   }
 
-  onMouseSpan(){
+  onMouseSpan() {
     this.isMouseOver = !this.isMouseOver;
   }
 
