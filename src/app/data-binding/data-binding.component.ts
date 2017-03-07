@@ -15,6 +15,7 @@ export class DataBindingComponent {
   isMouseOver: boolean = false;
 
   name: string = '';
+  person  = {name : '', age: 0};
   
   constructor() {
 
