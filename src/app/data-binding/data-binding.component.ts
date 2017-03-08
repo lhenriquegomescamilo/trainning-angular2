@@ -5,6 +5,7 @@ import { InputPropertyComponent } from './input-property.component';
   selector: 'app-data-binding',
   templateUrl: './data-binding.component.html',
   styleUrls: ['./data-binding.component.css', './bootstrap.min.css'],
+  directives: [InputPropertyComponent]
 })
 
 export class DataBindingComponent {
