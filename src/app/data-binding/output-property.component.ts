@@ -1,4 +1,4 @@
-import { Component, Input, EventEmitter, Output } from '@angular/core';
+import { Component, Input, EventEmitter, Output, OnInit } from '@angular/core';
 
 @Component({
     selector: 'counter',
@@ -12,20 +12,32 @@ import { Component, Input, EventEmitter, Output } from '@angular/core';
     `
 
 })
-export class OutputPropertyComponent {
+export class OutputPropertyComponent implements OnInit {
+    ngOnInit(): void {
+        throw new Error('Method not implemented.');
+    }
+
 
     @Input()
-    value: number = 0;
+    value = 0;
 
-    @Output() changeValue = new EventEmitter();
+    @Output()
+    changeValue = new EventEmitter();
+
     constructor() { }
 
     decrement() {
         this.value--;
-        this.changeValue.emit({ newValue: this.value });
+        this.changeValue.emit({
+            newValue: this.value
+        });
     }
+
     increment() {
         this.value++;
-        this.changeValue.emit({ newValue: this.value });
+        this.changeValue.emit({
+            newValue: this.value
+        });
     }
+
 }
